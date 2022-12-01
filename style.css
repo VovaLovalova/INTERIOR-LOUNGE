@@ -296,7 +296,7 @@ blockquote {
     margin-bottom: 56px;
 }
 
-.main-footer__form-comment {
+.wpcf7-textarea {
     display: block;
     width: 100%;
     border: 1px solid #F5D581;
@@ -312,7 +312,7 @@ blockquote {
     margin-bottom: 24px;
 }
 
-.main-footer__form-name {
+.wpcf7-text {
     display: block;
     width: 50%;
     border: 1px solid #F5D581;
@@ -327,7 +327,7 @@ blockquote {
     margin-bottom: 24px;
 }
 
-.main-footer__form-button {
+.wpcf7-submit {
     display: block;
     background-color: #9F7303;
     border-radius: 8px;
@@ -342,7 +342,7 @@ blockquote {
     cursor: pointer;
 }
 
-.main-footer__form-button:hover {
+.wpcf7-submit:hover {
     background-color: #F5D581;
 }
 
