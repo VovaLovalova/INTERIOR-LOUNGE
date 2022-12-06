@@ -1,2 +1,2 @@
 import './comments.js';
-import './drop-button.js';
+import './sub-menu.js';

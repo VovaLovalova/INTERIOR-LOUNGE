@@ -82,17 +82,18 @@ header {
     display: flex;
 }
 
-.navigation-list {
+.menu {
     display: flex;
     max-width: 848px;
     position: relative;
+    align-items: center;
 }
 
-.navigation-item{
+.menu-item {
     margin-right: 40px;
 }
 
-.button {
+.menu-item a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -103,16 +104,16 @@ header {
     cursor: pointer;
 }
 
-.button:hover {
+.menu-item a:hover {
     color: #9F7303;
 }
 
-.button__drop {
+.menu-item-has-children a {
     padding-right: 17px;
     position: relative;
 }
 
-.project-navigation {
+.sub-menu {
     min-width: 200px;
     position: absolute;
     background-color: #FFFFFF;
@@ -122,11 +123,11 @@ header {
     left: 0;
 }
 
-.project-navigation--item {
+.sub-menu .menu-item {
     margin-bottom: 24px;
 }
 
-.project-navigation--link {
+.sub-menu .menu-item a {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -135,19 +136,19 @@ header {
     color: #000000;
 }
 
-.project-navigation--link__curent {
+.sub-menu  .menu-item--curent a {
     color: #9F7303;
 }
 
-.project-navigation--link:hover {
+.sub-menu .menu-item a:hover {
     color: #9F7303;
 }
 
-.project-navigation__hidden {
+.sub-menu-wrapper--hidden {
     display: none;
 }
 
-.button__drop::after {
+.menu-item-has-children > a::after {
     content: "";
     position: absolute;
     width: 13px;
@@ -159,7 +160,7 @@ header {
     border-top: 9px solid #F5D581;
 }
 
-.button__border {
+.menu-item--border {
     border: 1px solid #9F7303;
     border-radius: 8px;
     padding: 6px 22px;
